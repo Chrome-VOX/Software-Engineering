@@ -13,16 +13,17 @@ using Test_Mot_Chut.DTO;
 
 namespace Test_Mot_Chut
 {
-    public partial class FormDrugStore : Form
+    public partial class FormDrugStore1 : Form
     {
         BindingSource loaiVaxinList = new BindingSource();
         BindingSource vacxinList = new BindingSource();
         
+
         bool checkSuaNhap = true;
         bool checkSuaNhapLoai = true;
-        public FormDrugStore()
+        public FormDrugStore1()
         {
-            
+
             InitializeComponent();
             //if (FormLogIn.arrchucVu[0] == "TK")
             //{
@@ -35,10 +36,10 @@ namespace Test_Mot_Chut
         }
 
         #region Method
-            public void getVacxin()
-            {
-                vacxinList.DataSource = VacxinDAO.Instance.GetVacxin();
-            }
+        public void getVacxin()
+        {
+            vacxinList.DataSource = VacxinDAO.Instance.GetVacxin();
+        }
 
         public void addVacXinBinding()
         {
@@ -64,7 +65,7 @@ namespace Test_Mot_Chut
 
         public void addLSPhieu()
         {
-            String query ="SELECT * FROM dbo.PhieuNhap";
+            String query = "SELECT * FROM dbo.PhieuNhap";
             DataTable dt = DataProvider.Instance.ExcuteQuery(query);
             dtgPhieuTiem.DataSource = dt;
         }
@@ -97,7 +98,7 @@ namespace Test_Mot_Chut
         }
         public void getLoaiVacxin()
         {
-           loaiVaxinList.DataSource = LoaiVacxinDAO.Instance.getDataLoaiVacxin();
+            loaiVaxinList.DataSource = LoaiVacxinDAO.Instance.getDataLoaiVacxin();
         }
         #endregion
 
@@ -122,7 +123,7 @@ namespace Test_Mot_Chut
             {
                 MessageBox.Show("Nhập nơi xuất xứ");
             }
-            else if(giaThanh.Equals(""))
+            else if (giaThanh.Equals(""))
             {
                 MessageBox.Show("Nhập giá thành");
             }
@@ -131,12 +132,12 @@ namespace Test_Mot_Chut
                 List<String> listMa = VacxinDAO.Instance.loadMaVacxin();
                 bool check = true;
 
-                for(int i = 0; i < listMa.Count; i++)
+                for (int i = 0; i < listMa.Count; i++)
                 {
                     if (ma.Equals(listMa[i]))
                     {
                         check = false;
-                        
+
                     }
                 }
                 if (check)
@@ -158,13 +159,13 @@ namespace Test_Mot_Chut
                     {
                         MessageBox.Show("Tên phải Vacxin khác nhau!!!");
                     }
-                   
+
                 }
                 else
                 {
                     MessageBox.Show("Mã Vacxin bị trùng. Mời Nhập lại!!!");
                 }
-                
+
 
             }
 
@@ -208,7 +209,7 @@ namespace Test_Mot_Chut
             }
             //------------------
             dtgLoaiVacxin.DataSource = loaiVaxinList;
-            dtgVacxin.DataSource = vacxinList;        
+            dtgVacxin.DataSource = vacxinList;
 
             getVacxin();
             addVacXinBinding();
@@ -216,7 +217,7 @@ namespace Test_Mot_Chut
             getLoaiVacxin();
             addLoaiVacxinDataBinding();
             addLSPhieu();
-            for(int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 dtgVacxin.Columns[i].HeaderCell.Style.Font = new Font("Arial", 12, FontStyle.Bold);
                 dtgVacxin.Columns[i].DefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Bold);
@@ -225,7 +226,7 @@ namespace Test_Mot_Chut
                 dtgVacxin.Columns[i].HeaderCell.Style.BackColor = Color.White;
                 dtgVacxin.Columns[i].DefaultCellStyle.BackColor = Color.White;
             }
-            
+
             dtgVacxin.EnableHeadersVisualStyles = false;
 
 
@@ -263,7 +264,7 @@ namespace Test_Mot_Chut
             dtgLoaiVacxin.EnableHeadersVisualStyles = false;
 
 
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 dtgPhieuTiem.Columns[i].HeaderCell.Style.Font = new Font("Arial", 12, FontStyle.Bold);
                 dtgPhieuTiem.Columns[i].DefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Bold);
@@ -274,8 +275,13 @@ namespace Test_Mot_Chut
             }
             dtgPhieuTiem.EnableHeadersVisualStyles = false;
 
-            
 
+            int w = this.panel1.Width;
+            int l = this.panel1.Height;
+            int X = this.panel1.Location.X;
+            int Y = this.panel1.Location.Y;
+            this.dtgPhieuTiem.Height = l - 2 * (X - this.dtgPhieuTiem.Location.X);
+            this.dtgPhieuTiem.Width = w - 2 * (Y - this.dtgPhieuTiem.Location.Y);
 
 
         }
@@ -285,31 +291,7 @@ namespace Test_Mot_Chut
 
         private void txtMaVacxin_TextChanged(object sender, EventArgs e)
         {
-            if (dtgVacxin.SelectedCells.Count > 0)
-            {
-                String id = dtgVacxin.SelectedCells[0].OwningRow.Cells["MaLoai"].Value.ToString();
-                LoaiVacxin loai = LoaiVacxinDAO.Instance.getLoaiVacxinByMa(id);
 
-                cbxLoaiVacxin.SelectedItem = loai;
-
-                int index = -1; 
-                int i = 0;
-
-
-                foreach (LoaiVacxin item in cbxLoaiVacxin.Items)
-                {
-
-                    if (item.MaLoai == loai.MaLoai)
-                    {
-                        index = i;
-                        break;
-                    }
-
-                    i++;
-                }
-
-                cbxLoaiVacxin.SelectedIndex = index;
-            }
         }
 
         private void btnVietPhieu_Click(object sender, EventArgs e)
@@ -327,7 +309,7 @@ namespace Test_Mot_Chut
         private void btnXoa_Click(object sender, EventArgs e)
         {
             String id = txtMaVacxin.Text;
-            
+
             if (VacxinDAO.Instance.DeleteVacxin(id))
             {
                 MessageBox.Show("Xóa Thành Công");
@@ -400,14 +382,14 @@ namespace Test_Mot_Chut
                 txtMaVacxin.Enabled = true;
                 checkSuaNhap = true;
             }
-            
-            
+
+
         }
-        
+
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            List<Vacxin> list= SearchVacxinByName(txtSearch.Text);
+            List<Vacxin> list = SearchVacxinByName(txtSearch.Text);
             if (list.Count == 0)
             {
                 MessageBox.Show("Không tìm thấy Vacxin");
@@ -415,7 +397,7 @@ namespace Test_Mot_Chut
             else
             {
                 vacxinList.DataSource = list;
-            }            
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -426,7 +408,8 @@ namespace Test_Mot_Chut
             if (maLoai.Equals(""))
             {
                 MessageBox.Show("Nhập mã Loại");
-            }else if (tenLoai.Equals(""))
+            }
+            else if (tenLoai.Equals(""))
             {
                 MessageBox.Show("Nhập Tên Loại");
             }
@@ -459,10 +442,10 @@ namespace Test_Mot_Chut
                 {
                     MessageBox.Show("Mã loại bị trùng. Mời bạn nhập lại mã Loại mới");
                 }
-                
+
             }
 
-            
+
         }
 
         private void lbSuaLoai_Click(object sender, EventArgs e)
@@ -497,7 +480,7 @@ namespace Test_Mot_Chut
         {
             String ma = txtMaLoai.Text;
             String name = txtTenLoai.Text;
-            
+
             if (name.Equals(""))
             {
                 MessageBox.Show("Nhập Tên loại mới");
@@ -529,7 +512,7 @@ namespace Test_Mot_Chut
                 MessageBox.Show("Chọn Cách tìm kiếm!!!");
             }
             else
-            {                 
+            {
                 if (index == 0)
                 {
                     List<LoaiVacxin> list = SearchLoaiVacxinByName(txtSearchLoai.Text);
@@ -556,8 +539,8 @@ namespace Test_Mot_Chut
                 }
 
             }
-            
-           
+
+
         }
         String value = "";
         private void dtgPhieuTiem_CellClick_1(object sender, DataGridViewCellEventArgs e)
@@ -615,8 +598,8 @@ namespace Test_Mot_Chut
             {
                 txtMa_NV.Visible = true;
                 dtNgayNhap_PN.Visible = false;
-            }            
-        }        
+            }
+        }
         private void btnXoaPhieu_Click(object sender, EventArgs e)
         {
             if (value.Equals(""))
@@ -633,36 +616,38 @@ namespace Test_Mot_Chut
                     addLSPhieu();
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Xóa Không thành công");
                     throw ex;
                 }
-                
-                
+
+
             }
-            
-            
+
+
         }
 
         private void btnTK_PN_Click(object sender, EventArgs e)
         {
             int index = comboBox1.SelectedIndex;
-            String query="";
-            if (dtNgayNhap_PN.Visible&&index==0)
+            String query = "";
+            if (dtNgayNhap_PN.Visible && index == 0)
             {
-                String date = dtNgayNhap_PN.Value.ToString("yyyy-MM-dd"); 
+                String date = dtNgayNhap_PN.Value.ToString("yyyy-MM-dd");
                 query = String.Format("EXEC dbo.chonPhieuNhapTheoNgayNhap @ngay = '{0}'", date);
-                DataTable data= DataProvider.Instance.ExcuteQuery(query);
+                DataTable data = DataProvider.Instance.ExcuteQuery(query);
                 dtgPhieuTiem.DataSource = data;
-                
-            }else if (txtMa_NV.Visible)
+
+            }
+            else if (txtMa_NV.Visible)
             {
                 if (index == 1)
                 {
                     String maNV = txtMa_NV.Text;
                     query = String.Format("EXEC dbo.chonPhieuNhapTheoMaNV @maNV = '{0}", maNV);
-                }else if (index == 2)
+                }
+                else if (index == 2)
                 {
                     String maPhieu = txtMa_NV.Text;
                     query = String.Format("EXEC dbo.chonPhieuNhapTheoMaPhieu @maPhieu = '{0}'", maPhieu);
@@ -670,7 +655,7 @@ namespace Test_Mot_Chut
                 DataTable data = DataProvider.Instance.ExcuteQuery(query);
                 dtgPhieuTiem.DataSource = data;
             }
-            
+
         }
 
         private void btnXem_PN_Click(object sender, EventArgs e)
@@ -701,7 +686,7 @@ namespace Test_Mot_Chut
                 }
                 dtgVacxin_Ma.EnableHeadersVisualStyles = false;
             }
-          
+
         }
 
         private void cbbtypeTK_SelectionChangeCommitted(object sender, EventArgs e)
@@ -724,7 +709,7 @@ namespace Test_Mot_Chut
                     vacxinList.DataSource = list;
                 }
             }
-            else if(index==1)
+            else if (index == 1)
             {
                 List<Vacxin> list = SearchVacxinByName(txtSearch.Text);
                 if (list.Count == 0)

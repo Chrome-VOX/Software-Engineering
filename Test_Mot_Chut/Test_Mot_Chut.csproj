@@ -82,6 +82,12 @@
     <Compile Include="FormDrugStore.Designer.cs">
       <DependentUpon>FormDrugStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDrugStore1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDrugStore1.Designer.cs">
+      <DependentUpon>FormDrugStore1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHetHanVacxin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDrugStore.resx">
       <DependentUpon>FormDrugStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDrugStore1.resx">
+      <DependentUpon>FormDrugStore1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHetHanVacxin.resx">
       <DependentUpon>FormHetHanVacxin.cs</DependentUpon>

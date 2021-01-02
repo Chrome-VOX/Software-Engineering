@@ -14,6 +14,7 @@ namespace Test_Mot_Chut
 {
     public partial class FormMain : Form
     {
+        private Form activeForm = null;
         public FormMain()
         {
             InitializeComponent();
@@ -39,12 +40,30 @@ namespace Test_Mot_Chut
             pnlContain.Tag = fc;
             fc.Show();
         }
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlContain.Controls.Add(childForm);
+            pnlContain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
-       
+
 
         private void btnKhoThuoc_Click_1(object sender, EventArgs e)
         {
-            openFormInPanel(new FormDrugStore());
+            openFormInPanel(new FormDrugStore1());
+            /*FormDrugStore f = new FormDrugStore();
+            //f.Dock = System.Windows.Forms.DockStyle.Fill;
+            f.TopLevel = false;
+            pnlContain.Controls.Add(f);
+            openChildForm(f);*/
+            
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -52,12 +71,18 @@ namespace Test_Mot_Chut
             if(FormLogIn.arrchucVu[0] != "QLTT")
             {
                 FormNhanVien f = new FormNhanVien(0);
-                f.ShowDialog();
+                //f.TopLevel = false;
+                //pnlContain.Controls.Add(f);
+                //openChildForm(f);
+                openFormInPanel(f);
             }
             else
             {
                 FormNhanVien f = new FormNhanVien(1);
-                f.ShowDialog();
+                //f.TopLevel = false;
+                //pnlContain.Controls.Add(f);
+                //openChildForm(f);
+                openFormInPanel(f);
             }
         }
 
@@ -82,21 +107,62 @@ namespace Test_Mot_Chut
 
         private void btnSlide_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 170)
+            if (pnlMenu.Width == 202)
             {
-                pnlMenu.Width = 58;
-                btnSlide.Location = new Point(60, 1);
+                pnlMenu.Width = 64;
+                btnSlide.Location = new Point(66, 1);
                 lbVaccine.Visible = false;
+                this.btnKhoThuoc.Text = "";
+                this.btnNhanVien.Text = "";
+                this.btnPhieuKham.Text = "";
+                this.btnKhachHang.Text = "";
+                this.btnLichHen.Text = "";
+                this.buttonCNCSDL.Text = "";
 
                 //pnlControl.Width = 819;
             }
             else
             {
-                pnlMenu.Width = 170;
-                btnSlide.Location = new Point(170, 0);
-                lbVaccine.Visible = true;
+                
+                    pnlMenu.Width = 202;
+                    btnSlide.Location = new Point(203, 0);
+                    lbVaccine.Visible = true;
+                    this.btnKhoThuoc.Text = "   Kho Thuốc";
+                    this.btnNhanVien.Text = "   Nhân Viên";
+                    this.btnPhieuKham.Text = "   Phiếu Khám";
+                    this.btnKhachHang.Text = "   Khách Hàng";
+                    this.btnLichHen.Text = "   Lịch Hẹn";
+                    this.buttonCNCSDL.Text = "   Cập nhật";
+
                 //pnlControl.Width = 661;
             }
+            /*if (this.btnKhoThuoc.Text == "Kho thuốc")
+            {
+                pnlMenu.Width = 58;
+                btnSlide.Location = new Point(60, 1);
+                lbVaccine.Visible = false;
+                this.btnKhoThuoc.Text = "";
+                this.btnNhanVien.Text = "";
+                this.btnPhieuKham.Text = "";
+                this.btnKhachHang.Text = "";
+                this.btnLichHen.Text = "";
+                this.buttonCNCSDL.Text = "";
+
+            }
+            else
+            {
+                pnlMenu.Width = 269;
+                btnSlide.Location = new Point(277, 0);
+                lbVaccine.Visible = true;
+                this.btnKhoThuoc.Text = "Kho Thuốc";
+                this.btnNhanVien.Text = "Nhân Viên";
+                this.btnPhieuKham.Text = "Phiếu Khám";
+                this.btnKhachHang.Text = "Khách Hàng";
+                this.btnLichHen.Text = "Lịch Hẹn";
+                this.buttonCNCSDL.Text = "Cập nhật";
+            }*/
+            
+
         }
 
         private void iconHide_Click(object sender, EventArgs e)
@@ -111,6 +177,9 @@ namespace Test_Mot_Chut
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            //this.textBox1.Text = this.pnlMenu.Width.ToString();
+            this.Location = new Point(0, 0);
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             buttonCNCSDL.Visible = false;
           
             if (FormLogIn.arrchucVu[0] == "LT")

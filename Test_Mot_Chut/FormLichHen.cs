@@ -211,5 +211,10 @@ namespace Test_Mot_Chut
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
