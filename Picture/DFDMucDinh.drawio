@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T15:06:30.595Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="m0JAi7uXbWgFMh17O1Vt" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-04T16:27:57.067Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="boX9_2bT-OQao1w2ccxN" version="14.4.4" type="github">
   <diagram id="uJvcFXQCn8Hm2iaw4MTs" name="Page-1">
     <mxGraphModel dx="2377" dy="1881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="PVHI4mAV19_t1U58k2j2-76" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="-30" width="990" height="980" as="geometry" />
+          <mxGeometry x="-105" y="-90" width="990" height="980" as="geometry" />
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1.005;entryY=0.657;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;startArrow=classic;startFill=1;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-22" target="PVHI4mAV19_t1U58k2j2-8">
           <mxGeometry relative="1" as="geometry">
@@ -48,6 +48,22 @@
         <mxCell id="PVHI4mAV19_t1U58k2j2-58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.188;entryY=1.051;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=classic;startFill=1;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-1" target="PVHI4mAV19_t1U58k2j2-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-88" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.431;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-1" target="PVHI4mAV19_t1U58k2j2-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-89" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.342;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-1" target="PVHI4mAV19_t1U58k2j2-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="314" />
+              <mxPoint x="-90" y="633" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-90" value="Thống kê doanh số theo ngày" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rotation=270;" vertex="1" connectable="0" parent="PVHI4mAV19_t1U58k2j2-89">
+          <mxGeometry x="-0.2427" y="-1" relative="1" as="geometry">
+            <mxPoint x="11" y="37.22" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-1" value="Thanh toán hóa đơn" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="-10" y="160" width="190" height="180" as="geometry" />
         </mxCell>
@@ -88,6 +104,16 @@
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.001;exitY=0.441;exitDx=0;exitDy=0;entryX=0.458;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;exitPerimeter=0;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-6" target="PVHI4mAV19_t1U58k2j2-9">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-79" value="Quà tặng" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-6" target="PVHI4mAV19_t1U58k2j2-9">
+          <mxGeometry x="0.4396" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="250" />
+              <mxPoint x="780" y="-270" />
+              <mxPoint x="408" y="-270" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-6" value="Chăm sóc khách hàng" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="570" y="160" width="190" height="180" as="geometry" />
@@ -136,17 +162,41 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PVHI4mAV19_t1U58k2j2-71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-8" target="PVHI4mAV19_t1U58k2j2-11">
+        <mxCell id="PVHI4mAV19_t1U58k2j2-71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-8" target="PVHI4mAV19_t1U58k2j2-11">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-120" y="656" />
-              <mxPoint x="-120" y="1203" />
+              <mxPoint x="-120" y="1160" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-73" value="Trả lời yêu cầu cập nhật giá mặt hàng" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rotation=270;" vertex="1" connectable="0" parent="PVHI4mAV19_t1U58k2j2-71">
           <mxGeometry x="0.1427" y="-3" relative="1" as="geometry">
             <mxPoint x="-7" y="-26.58" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-8" target="PVHI4mAV19_t1U58k2j2-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="610" />
+              <mxPoint x="-230" y="610" />
+              <mxPoint x="-230" y="1203" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-83" value="Trả lời yêu cầu thực hiện tích điểm đổi quà" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rotation=270;" vertex="1" connectable="0" parent="PVHI4mAV19_t1U58k2j2-82">
+          <mxGeometry x="0.0458" y="4" relative="1" as="geometry">
+            <mxPoint x="-24" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-84" value="Yêu cầu thực hiện tích điểm đổi quà" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-8" target="PVHI4mAV19_t1U58k2j2-6">
+          <mxGeometry x="0.1145" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="656" />
+              <mxPoint x="380" y="560" />
+              <mxPoint x="732" y="560" />
+            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-8" value="Quản lý chung" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
@@ -235,6 +285,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-77" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.068;entryY=0.24;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-9" target="PVHI4mAV19_t1U58k2j2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-78" value="Yêu cầu tham gia đổi quà" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rotation=270;" vertex="1" connectable="0" parent="PVHI4mAV19_t1U58k2j2-77">
+          <mxGeometry x="-0.1679" y="3" relative="1" as="geometry">
+            <mxPoint x="-15.9" y="80.4" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-9" value="Khách hàng" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="280" y="-210" width="170" height="150" as="geometry" />
         </mxCell>
@@ -293,14 +351,24 @@
             <mxPoint x="-8" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-80" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.23;entryY=0.082;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-11" target="PVHI4mAV19_t1U58k2j2-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-190" y="1190" />
+              <mxPoint x="-190" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-81" value="Yêu cầu thực hiện tích điểm đổi quà" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rotation=270;" vertex="1" connectable="0" parent="PVHI4mAV19_t1U58k2j2-80">
+          <mxGeometry x="-0.165" relative="1" as="geometry">
+            <mxPoint x="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-11" value="Công ty" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-20" y="1090" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-13" value="Yêu cầu thanh toán trực tiếp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;rotation=270;" vertex="1" parent="1">
           <mxGeometry x="-95" y="30" width="190" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="PVHI4mAV19_t1U58k2j2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-21" target="PVHI4mAV19_t1U58k2j2-8">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PVHI4mAV19_t1U58k2j2-21" value="Hóa đơn thanh toán" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="120" y="420" width="120" height="60" as="geometry" />
@@ -382,8 +450,33 @@
             <mxPoint x="-13.39" y="-19.78" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PVHI4mAV19_t1U58k2j2-69" value="Thống kê doanh số theo tháng" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="220" y="570" width="120" height="60" as="geometry" />
+        <mxCell id="PVHI4mAV19_t1U58k2j2-69" value="Thống kê doanh số theo ngày" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-21" target="PVHI4mAV19_t1U58k2j2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-87" value="Xác nhận thực hiện tích điểm đổi quà" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.667;exitDx=0;exitDy=0;entryX=0.724;entryY=0.041;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;startArrow=none;startFill=0;targetPerimeterSpacing=0;strokeColor=#000000;fontSize=13;exitPerimeter=0;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-6" target="PVHI4mAV19_t1U58k2j2-8">
+          <mxGeometry x="-0.6499" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="280" />
+              <mxPoint x="280" y="540" />
+              <mxPoint x="128" y="540" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PVHI4mAV19_t1U58k2j2-91" value="Thống kê doanh số theo tháng" style="endArrow=classic;html=1;shadow=0;strokeColor=#000000;fontSize=13;exitX=0.64;exitY=0.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.9;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" edge="1" parent="1" source="PVHI4mAV19_t1U58k2j2-8" target="PVHI4mAV19_t1U58k2j2-11">
+          <mxGeometry x="0.7443" y="-15" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="570" as="sourcePoint" />
+            <mxPoint x="80" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="112" y="580" />
+              <mxPoint x="-310" y="580" />
+              <mxPoint x="-310" y="1225" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
